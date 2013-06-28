@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+header {
+     background: #206a8c url("img/bg.jpg") no-repeat;
+     background-size: cover;
+     background-position: 50% 50%;
+     text-align: center;
+     color: white;
+     font-weight: bold;
+     padding-bottom: .8em;
+}
+
+#logo {
+     padding: 2.7em 0em 0em 0em;
+     width: 100px;
+     height: 100px;
+}
+
+.container.narrow {
+     max-width: 33em;
+     background-color: #fff;
+     margin-top: 3em;
+}
+
+.container.narrow h1 {
+     font-size: 2.3em;
+}
+
+.sectionTitle {
+     font-weight: bolder;
+     font-size: 1.4em;
+}
+
+.plain {
+     margin: 0px;
+}
+
+.btn-awesome {
+     background-color: #378e46;
+     border: none;
+     box-shadow: 0px 2px 0px #2e4822;
+     text-shadow: 0px -1px 1px #1b5640;
+     color: #ffffff;
+     font-size: 1.4em;
+     padding: .7em 1.5em;
+     text-transform: uppercase;
+     font-weight: bold;
+}
+
+.btn-awesome:hover {
+     background-color: #479860;
+}
+
+.brand {
+     color: #ffffff;
+     font-size: 1.5em;
+     webkit-text-stroke: 4px;
+     font-weight: 900;
+     letter-spacing: 4px;
+     margin-top: 20px;
+     font-family: 'Lato', sans-serif;
+}
+
+.slogan {
+     font-family: georgia, serif;
+     font-weight: 100;
+     font-size: .6em;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     margin-bottom: 2.7em;
+}
+
+.icons {
+     font-size: 2em;
+}
+
+.total {
+     font-size: 1.7em;
+     text-align: right;
+}
