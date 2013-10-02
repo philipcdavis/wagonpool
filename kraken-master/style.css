@@ -39,18 +39,21 @@ header {
 
 .plain {
      margin: 0px;
+     font-size: 1.2em;
+     padding: .3em;
 }
 
 .btn-awesome {
      background-color: #378e46;
-     border: none;
-     box-shadow: 0px 2px 0px #2e4822;
+     border: 1px solid #3d5f2c;
+     box-shadow: 0px 2px 0px #345126;
      text-shadow: 0px -1px 1px #1b5640;
      color: #ffffff;
-     font-size: 1.4em;
-     padding: .7em 1.5em;
-     text-transform: uppercase;
+     font-size: 1em;
+     padding-top: .7em;
+     padding-bottom: .7em;
      font-weight: bold;
+     width: 100%;
 }
 
 .btn-awesome:hover {
@@ -81,6 +84,24 @@ header {
 }
 
 .total {
-     font-size: 1.7em;
+     font-size: 1.3em;
      text-align: right;
+     font-weight: bold;
+}
+
+.row.gray {
+  background-color: #eee;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 2em;
+  border-top: 1px dotted #bbb;
+}
+
+.row.gray input{
+  margin-bottom: 0em;
+ }
+
+hr {
+  border-bottom: none;
+  border-top: 1px dotted #ccc;
 }

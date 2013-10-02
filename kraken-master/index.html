@@ -43,32 +43,30 @@
         <section class="container narrow">
 			 <div class="row">
 				<div class="sectionTitle grid-3">Distance in miles</div>
-				<div class="grid-2 offset-1"><input type="text" class="plain"></div>
+				<div class="grid-2 offset-1"><input type="text" id="distance" class="plain" required></div>
 			 </div>
 		 
 			 <div class="row">
 				<hr>
 				<div class="sectionTitle grid-3">Miles per gallon</div>
-				<div class="grid-2 offset-1"><input type="text" class="plain"></div>
+				<div class="grid-2 offset-1"><input type="text" id="mpg" class="plain" required></div>
 			 </div>
 		  
 			 <div class="row">
 				<hr>
 				<div class="sectionTitle grid-3">Gas cost per gallon</div>
-				<div class="grid-2 offset-1"><input type="text" class="plain"></div>
+				<div class="grid-2 offset-1"><input type="text" id="cpg" class="plain" required></div>
 			 </div>
 		  
 			 <div class="row">
 				<hr>
 				<div class="sectionTitle grid-3">Number of people</div>
-				<div class="grid-2 offset-1"><input type="text" class="plain"></div>
+				<div class="grid-2 offset-1"><input type="text" id="people" class="plain" required></div>
 			 </div>
 		  
-		  
-			 <div class="row">
-				<hr>
-				<button class="btn btn-awesome grid-3">Calculate</button>
-				<input type="text" class="total grid-3">
+			 <div class="row gray">
+				<button class="btn btn-awesome grid-2" onclick="calc()">Calculate</button>
+				<input type="text" class="total grid-2 offset-2" id="total">
 			 </div>
 
         </section>
@@ -78,6 +76,7 @@
         <!-- Javascript -->
         <!-- In the footer for better performance -->
         <script src="js/kraken.js"></script>
+	   <script src="js/calculate.js"></script>
        
 
     </body>
