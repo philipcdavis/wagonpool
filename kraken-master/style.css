@@ -54,10 +54,25 @@ header {
      padding-bottom: .7em;
      font-weight: bold;
      width: 100%;
+     margin-bottom: 13px;
+     border-radius: 3px;
+}
+
+@media(min-width: 30em) {
+  .btn-awesome {
+    width: 30.30303030303%;
+    float: left;
+    margin-bottom: 0px;
+  }
 }
 
 .btn-awesome:hover {
      background-color: #479860;
+}
+
+.btn-awesome:active {
+     background-color: #2b6c36;
+     color: #d7d7d7;
 }
 
 .brand {
@@ -91,14 +106,16 @@ header {
 
 .row.gray {
   background-color: #eee;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 1em;
   margin-top: 2em;
+  margin-bottom: 2em;
   border-top: 1px dotted #bbb;
+  
 }
 
 .row.gray input{
   margin-bottom: 0em;
+  margin-right: 0px;
  }
 
 hr {
