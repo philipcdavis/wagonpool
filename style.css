@@ -7,7 +7,7 @@
 }
 
 header {
-     background: #206a8c url("img/bg.jpg") no-repeat;
+     background: #378e46 url("img/bg.jpg") no-repeat;
      background-size: cover;
      background-position: 50% 50%;
      text-align: center;
@@ -30,6 +30,10 @@ header {
 
 .container.narrow h1 {
      font-size: 2.3em;
+}
+
+input {
+  border: 2px solid #ccc;
 }
 
 .sectionTitle {
@@ -121,4 +125,24 @@ header {
 hr {
   border-bottom: none;
   border-top: 1px dotted #ccc;
+}
+
+/*--------------Parsley Validation-----------*/
+input.parsley-error {
+  border: solid 2px #f01e1e;
+}
+
+input.parsley-success {
+  border: solid 2px #378e46;
+}
+
+ul.parsley-error-list {
+  margin: 0px;
+}
+
+ul.parsley-error-list li {
+  color: #f01e1e;
+  font-size: 11px;
+  list-style-type: none;
+  margin-bottom: none;
 }

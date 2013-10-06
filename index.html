@@ -41,34 +41,35 @@
 	   </header>
 	   
         <section class="container narrow">
-			 <div class="row">
+		  <form data-validate="parsley" id="calculator" data-validation-minlength="1">
+		  	 <div class="row">
 				<div class="sectionTitle grid-3">Distance in miles</div>
-				<div class="grid-2 offset-1"><input type="text" id="distance" class="plain" required></div>
+				<div class="grid-2 offset-1"><input type="text" id="distance" data-type="number" data-trigger="focusin focusout" class="plain" data-required="true" ></div>
 			 </div>
 		 
 			 <div class="row">
 				<hr>
 				<div class="sectionTitle grid-3">Miles per gallon</div>
-				<div class="grid-2 offset-1"><input type="text" id="mpg" class="plain" required></div>
+				<div class="grid-2 offset-1"><input type="text" data-trigger="change" id="mpg" data-type="number" data-trigger="focusin focusout" class="plain" data-required="true"></div>
 			 </div>
 		  
 			 <div class="row">
 				<hr>
 				<div class="sectionTitle grid-3">Gas cost per gallon</div>
-				<div class="grid-2 offset-1"><input type="text" id="cpg" class="plain" required></div>
+				<div class="grid-2 offset-1"><input type="text" id="cpg" data-type="number" data-trigger="focusin focusout" class="plain" data-required="true"></div>
 			 </div>
 		  
 			 <div class="row">
 				<hr>
 				<div class="sectionTitle grid-3">Number of people</div>
-				<div class="grid-2 offset-1"><input type="text" id="people" class="plain" required></div>
+				<div class="grid-2 offset-1"><input type="text" id="people" data-type="number" data-trigger="focusin focusout" class="plain" data-required="true"></div>
 			 </div>
 		  
 			 <div class="row gray">
-				<button class="btn-awesome grid-3" onclick="calc()">Calculate</button>
-				<div class="grid-2 offset-2"><input type="text" class="total" id="total"></div>
+				<button class="btn-awesome grid-3" type="button" onclick="calc()">Calculate</button>
+				<div class="grid-2 offset-2"><input type="text" class="total" id="total" disabled="disabled"></div>
 			 </div>
-
+		  </form>
         </section>
 
         
@@ -77,6 +78,7 @@
         <!-- In the footer for better performance -->
         <script src="js/kraken.js"></script>
 	   <script src="js/calculate.js"></script>
+	   <script src="js/parsley.js"></script>
        
 
     </body>
